@@ -34,6 +34,30 @@ input[type="range"] {
       width: 5rem;
     }
 
+    &::-moz-range-thumb {
+      height: 3.5rem;
+      width: 3.5rem;
+      border-radius: 50%;
+      background: hsl(174, 86%, 45%);
+
+      @media screen and (max-width: 550px) {
+        height: 5rem;
+        width: 5rem;
+      }
+    }
+
+    &::-ms-thumb {
+      height: 3.5rem;
+      width: 3.5rem;
+      border-radius: 50%;
+      background: hsl(174, 86%, 45%);
+
+      @media screen and (max-width: 550px) {
+        height: 5rem;
+        width: 5rem;
+      }
+    }
+
     background-image: url("../../../public/images/icon-slider.svg");
     cursor: pointer;
     box-shadow: 0 0 2px 0 #555;
