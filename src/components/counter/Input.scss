@@ -24,49 +24,56 @@ input[type="range"] {
 
   &::-webkit-slider-thumb {
     -webkit-appearance: none;
+    appearance: none;
     height: 3.5rem;
     width: 3.5rem;
     border-radius: 50%;
     background: hsl(174, 86%, 45%);
-
-    @media screen and (max-width: 550px) {
-      height: 5rem;
-      width: 5rem;
-    }
-
-    &::-moz-range-thumb {
-      height: 3.5rem;
-      width: 3.5rem;
-      border-radius: 50%;
-      background: hsl(174, 86%, 45%);
-
-      @media screen and (max-width: 550px) {
-        height: 5rem;
-        width: 5rem;
-      }
-    }
-
-    &::-ms-thumb {
-      height: 3.5rem;
-      width: 3.5rem;
-      border-radius: 50%;
-      background: hsl(174, 86%, 45%);
-
-      @media screen and (max-width: 550px) {
-        height: 5rem;
-        width: 5rem;
-      }
-    }
-
     background-image: url("../../../public/images/icon-slider.svg");
     padding: 2rem;
     cursor: pointer;
     box-shadow: 0 0 2px 0 #555;
     background-repeat: no-repeat;
     background-position: center;
-
+    box-shadow: 0 10px 10px 0px hsl(174, 77%, 80%);
     @media screen and (max-width: 550px) {
-      padding: 3rem;
+      height: 5rem;
+      width: 5rem;
+    }
+  }
+  &::-moz-range-thumb {
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    background: hsl(174, 86%, 45%);
+    background-image: url("../../../public/images/icon-slider.svg");
+    cursor: pointer;
+    box-shadow: 0 0 2px 0 #555;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    box-shadow: 0 10px 10px 0px hsl(174, 77%, 80%);
+    @media screen and (max-width: 550px) {
+      height: 5rem;
+      width: 5rem;
+    }
+  }
+
+  &::-ms-thumb {
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    background: hsl(174, 86%, 45%);
+    background-image: url("../../../public/images/icon-slider.svg");
+    padding: 2rem;
+    cursor: pointer;
+    box-shadow: 0 0 2px 0 #555;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 10px 10px 0px hsl(174, 77%, 80%);
+    @media screen and (max-width: 550px) {
+      height: 5rem;
+      width: 5rem;
     }
   }
 
@@ -75,5 +82,9 @@ input[type="range"] {
     box-shadow: none;
     border: none;
     background: transparent;
+  }
+
+  @media screen and (max-width: 550px) {
+    padding: 3rem;
   }
 }
