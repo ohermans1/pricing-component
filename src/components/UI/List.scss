@@ -1,0 +1,12 @@
+.list {
+  list-style-image: url("../../../public/images/icon-check.svg");
+  font-size: 1.3rem;
+  &__item {
+    color: hsl(225, 20%, 60%);
+    padding: 0.5rem;
+  }
+
+  @media screen and (max-width: 550px) {
+    list-style-position: inside;
+  }
+}

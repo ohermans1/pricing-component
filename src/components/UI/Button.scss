@@ -1,0 +1,19 @@
+.button {
+  background-color: hsl(227, 35%, 25%);
+  color: hsl(226, 100%, 87%);
+  padding: 1.5rem 4.5rem;
+  border-radius: 30px;
+  border: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  &:hover {
+    background-color: hsl(227, 35%, 25%, 95%);
+  }
+
+  &:active,
+  &:visited {
+    background-color: hsl(227, 35%, 25%);
+  }
+}

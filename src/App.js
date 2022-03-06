@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
+import { useEffect } from "react";
+import Header from "./components/UI/Header";
+import Card from "./components/UI/Card";
+import Slider from "./components/counter/Slider";
+import Info from "./components/UI/Info";
 
 function App() {
+  //Setting Page Title
+  useEffect(() => {
+    document.title = "Ollie Hermans | Pricing Component";
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="main">
+      <Header />
+      <Card>
+        <Slider />
+        <Info />
+      </Card>
+    </main>
   );
 }
 

@@ -1,0 +1,18 @@
+.slider {
+  display: flex;
+  flex-direction: column;
+}
+
+.variables {
+  display: flex;
+  padding: 4rem;
+  justify-content: space-between;
+  align-items: center;
+  width: min-content;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 550px) {
+    justify-content: center;
+    padding: 4rem 2rem;
+  }
+}
